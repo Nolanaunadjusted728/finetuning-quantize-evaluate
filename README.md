@@ -114,4 +114,4 @@ The PDF is also automatically compiled and deployed to GitHub Pages on every pus
 
 ## License
 
-© Isham Rashik, 2026
+This project is licensed under the [MIT License](LICENSE).
