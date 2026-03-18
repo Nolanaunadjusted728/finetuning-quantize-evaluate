@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="812" height="569" viewBox="0 0 812 569">
+  <title>Retrieval: Generic vs Fine-Tuned Embeddings</title>
+  <defs>
+      <marker id="arrow-1e1e1e" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e"/></marker>
+      <marker id="arrow-e03131" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e03131"/></marker>
+      <marker id="arrow-2f9e44" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2f9e44"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="30.0" y="58.0" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Retrieval: Generic vs Fine-Tuned Embeddings</text>
+    <rect x="278.7" y="85.5" width="160.0" height="40.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="303.7" y="109.5" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">User Query</text>
+    <path d="M 358.7,125.5 L 358.7,150.5" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <rect x="268.7" y="155.5" width="180.0" height="40.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="288.7" y="178.5" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Embedding Model</text>
+    <path d="M 358.7,195.5 L 358.7,220.5" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <rect x="268.7" y="225.5" width="180.0" height="40.0" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="288.7" y="244.5" font-size="11" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Vector DB</text>
+    <text x="288.7" y="258.8" font-size="11" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(cosine similarity)</text>
+    <path d="M 308.7,265.5 L 178.7,305.5" stroke="#e03131" stroke-width="2" fill="none" marker-end="url(#arrow-e03131)" opacity="1.0"/>
+    <path d="M 408.7,265.5 L 538.7,305.5" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <rect x="58.7" y="315.5" width="200.0" height="40.0" fill="#ffc9c9" stroke="#e03131" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="68.7" y="337.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">GENERIC EMBEDDINGS</text>
+    <rect x="458.7" y="315.5" width="220.0" height="40.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="468.7" y="337.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">FINE-TUNED EMBEDDINGS</text>
+    <text x="73.7" y="377.5" font-size="12" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">Retrieves by</text>
+    <text x="73.7" y="393.1" font-size="12" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">generic semantics</text>
+    <text x="488.7" y="377.5" font-size="12" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">Retrieves by</text>
+    <text x="488.7" y="393.1" font-size="12" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">domain semantics</text>
+    <path d="M 158.7,400.5 L 158.7,425.5" stroke="#e03131" stroke-width="2" fill="none" marker-end="url(#arrow-e03131)" opacity="1.0"/>
+    <path d="M 568.7,400.5 L 568.7,425.5" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <rect x="113.7" y="430.5" width="90.0" height="35.0" fill="#e9ecef" stroke="#495057" stroke-width="1" rx="0" opacity="1.0"/>
+    <text x="133.7" y="451.5" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[LLM]</text>
+    <rect x="523.7" y="430.5" width="90.0" height="35.0" fill="#e9ecef" stroke="#495057" stroke-width="1" rx="0" opacity="1.0"/>
+    <text x="543.7" y="451.5" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[LLM]</text>
+    <text x="88.7" y="488.5" font-size="13" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">Poor answer</text>
+    <text x="88.7" y="505.4" font-size="13" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">(wrong context)</text>
+    <text x="498.7" y="488.5" font-size="13" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">Accurate answer</text>
+    <text x="498.7" y="505.4" font-size="13" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">(right context)</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="616" height="119" viewBox="0 0 616 119">
+  <title>19-rag-pipeline</title>
+  <defs>
+
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="30.0" y="41.3" font-size="11" fill="#22c55e" font-family="'Courier New',monospace" opacity="1.0">Fast: encode once, compare many</text>
+    <text x="30.0" y="55.6" font-size="11" fill="#22c55e" font-family="'Courier New',monospace" opacity="1.0">Scales to millions of docs</text>
+    <text x="357.7" y="41.0" font-size="11" fill="#ef4444" font-family="'Courier New',monospace" opacity="1.0">Slow: re-encode per pair</text>
+    <text x="357.7" y="55.3" font-size="11" fill="#ef4444" font-family="'Courier New',monospace" opacity="1.0">Use on top-K from dual encoder</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7.19140625 10279.6015625 784.73828125 573.03125" width="784.73828125" height="573.03125">
+<rect x="7.19140625" y="10279.6015625" width="784.73828125" height="573.03125" fill="#ffffff" />
+<text x="75.47265625" y="10337.6015625" font-size="28" font-family="monospace" fill="#1e1e1e">Retrieval Scoring &amp; Ranking Metrics</text>
+<rect x="101.8359375" y="10372.36328125" width="200" height="50" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="8" />
+<text x="116.8359375" y="10396.36328125" font-size="14" font-family="monospace" fill="#1971c2">Query: &quot;What is</text>
+<text x="116.8359375" y="10413.86328125" font-size="14" font-family="monospace" fill="#1971c2">tokenization?&quot;</text>
+<defs><marker id="ah_22016" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#495057" /></marker></defs>
+<polyline points="201.8359375,10422.36328125 201.8359375,10452.36328125" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#ah_22016)" />
+<rect x="126.8359375" y="10452.36328125" width="150" height="40" fill="#d0bfff" stroke="#6741d9" stroke-width="2" rx="8" />
+<text x="141.8359375" y="10474.36328125" font-size="14" font-family="monospace" fill="#6741d9">Embed (model)</text>
+<defs><marker id="ah_23424" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#495057" /></marker></defs>
+<polyline points="201.8359375,10492.36328125 201.8359375,10522.36328125" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#ah_23424)" />
+<rect x="111.8359375" y="10522.36328125" width="194.2421875" height="35" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="8" />
+<text x="121.8359375" y="10540.36328125" font-size="12" font-family="monospace" fill="#495057">[0.23, -0.15, 0.87, ...]</text>
+<defs><marker id="ah_24704" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#495057" /></marker></defs>
+<polyline points="201.8359375,10557.36328125 201.8359375,10587.36328125" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#ah_24704)" />
+<text x="211.8359375" y="10575.36328125" font-size="11" font-family="monospace" fill="#868e96">cosine</text>
+<text x="211.8359375" y="10589.11328125" font-size="11" font-family="monospace" fill="#868e96">similarity</text>
+<text x="38.109375" y="10612.7421875" font-size="14" font-family="monospace" fill="#1e1e1e">Ranked Results</text>
+<rect x="37.19140625" y="10626.0703125" width="340" height="26" fill="#b2f2bb" stroke="#2f9e44" stroke-width="1" rx="8" />
+<text x="42.19140625" y="10640.0703125" font-size="11" font-family="monospace" fill="#2f9e44">#1 ✓  Chunk 12: &quot;Tokenization splits text...&quot;</text>
+<text x="317.19140625" y="10642.0703125" font-size="13" font-family="monospace" fill="#2f9e44">0.92</text>
+<rect x="37.19140625" y="10656.0703125" width="340" height="26" fill="#e9ecef" stroke="#495057" stroke-width="1" rx="8" />
+<text x="42.19140625" y="10670.0703125" font-size="11" font-family="monospace" fill="#495057">#2  Chunk 7:  &quot;Attention mechanism...&quot;</text>
+<text x="317.19140625" y="10672.0703125" font-size="13" font-family="monospace" fill="#495057">0.71</text>
+<rect x="37.19140625" y="10686.0703125" width="340" height="26" fill="#e9ecef" stroke="#495057" stroke-width="1" rx="8" />
+<text x="42.19140625" y="10700.0703125" font-size="11" font-family="monospace" fill="#495057">#3  Chunk 3:  &quot;Embedding dimensions...&quot;</text>
+<text x="317.19140625" y="10702.0703125" font-size="13" font-family="monospace" fill="#495057">0.68</text>
+<rect x="37.19140625" y="10716.0703125" width="340" height="26" fill="#e9ecef" stroke="#495057" stroke-width="1" rx="8" />
+<text x="42.19140625" y="10730.0703125" font-size="11" font-family="monospace" fill="#495057">#4  Chunk 19: &quot;Loss function types...&quot;</text>
+<text x="317.19140625" y="10732.0703125" font-size="13" font-family="monospace" fill="#495057">0.45</text>
+<rect x="37.19140625" y="10746.0703125" width="340" height="26" fill="#f8f9fa" stroke="#868e96" stroke-width="1" rx="8" />
+<text x="42.19140625" y="10760.0703125" font-size="11" font-family="monospace" fill="#868e96">#5  Chunk 1:  &quot;Introduction to NLP...&quot;</text>
+<text x="317.19140625" y="10762.0703125" font-size="13" font-family="monospace" fill="#868e96">0.31</text>
+<text x="457.19140625" y="10398.0703125" font-size="20" font-family="monospace" fill="#1e1e1e">Ranking Metrics</text>
+<rect x="457.19140625" y="10413.0703125" width="297.625" height="80" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="8" />
+<text x="494.640625" y="10436.9609375" font-size="14" font-family="monospace" fill="#1971c2">MRR (Mean Reciprocal Rank)</text>
+<text x="494.5625" y="10458.35" font-size="12.271874999999993" font-family="monospace" fill="#495057">1/rank of first correct result</text>
+<text x="494.5625" y="10473.68984375" font-size="12.271874999999993" font-family="monospace" fill="#495057">MRR = 1/1 = 1.0 (best)</text>
+<rect x="457.19140625" y="10508.0703125" width="299.0390625" height="80" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="8" />
+<text x="571.95703125" y="10528.79296875" font-size="14" font-family="monospace" fill="#2f9e44">Recall@k</text>
+<text x="489.34375" y="10551.0703125" font-size="12.281250000000004" font-family="monospace" fill="#495057">Fraction of relevant docs in top-k</text>
+<text x="489.34375" y="10566.421875" font-size="12.281250000000004" font-family="monospace" fill="#495057">Recall@5 = 1/1 = 1.0</text>
+<rect x="457.19140625" y="10603.0703125" width="304.73828125" height="80" fill="#d0bfff" stroke="#6741d9" stroke-width="2" rx="8" />
+<text x="585.1796875" y="10623.8671875" font-size="14" font-family="monospace" fill="#6741d9">NDCG@k</text>
+<text x="462.92796875" y="10644.5421875" font-size="11.456249999999999" font-family="monospace" fill="#495057">Normalized Discounted Cumulative Gain</text>
+<text x="462.92796875" y="10658.8625" font-size="11.456249999999999" font-family="monospace" fill="#495057">Weights position: higher rank = more credit</text>
+<rect x="457.19140625" y="10698.0703125" width="301.53125000000006" height="80" fill="#ffec99" stroke="#e8590c" stroke-width="2" rx="8" />
+<text x="564.5" y="10719.59765625" font-size="14" font-family="monospace" fill="#e8590c">Hit Rate@k</text>
+<text x="499.9140625" y="10739.72734375" font-size="11.903125000000005" font-family="monospace" fill="#495057">Binary: is correct doc in top-k?</text>
+<text x="499.9140625" y="10754.60625" font-size="11.903125000000005" font-family="monospace" fill="#495057">Hit@5 = 1 (yes)</text>
+<polyline points="381.421875,10637.8515625 442.19140625,10453.0703125" fill="none" stroke="#868e96" stroke-width="1" stroke-dasharray="6 4" />
+</svg>

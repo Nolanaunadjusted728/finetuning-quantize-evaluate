@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="863" height="858" viewBox="0 0 863 858">
+  <title>Transfer Learning: LSTM Era vs Transformer Era</title>
+  <defs>
+      <marker id="arrow-1e1e1e" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e"/></marker>
+      <marker id="arrow-e03131" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e03131"/></marker>
+      <marker id="arrow-2f9e44" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2f9e44"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="30.0" y="58.0" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Transfer Learning: LSTM Era vs Transformer Era</text>
+    <text x="130.7" y="102.9" font-size="20" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">LSTM Era: Architecture Surgery Required</text>
+    <text x="191.5" y="500.4" font-size="20" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">Transformer Era: Same Architecture</text>
+    <text x="160.7" y="136.9" font-size="14" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">Task A (Sentiment)</text>
+    <rect x="110.7" y="142.9" width="220.0" height="55.0" fill="#ffc9c9" stroke="#e03131" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="153.7" y="166.8" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Dense(1, sigmoid)</text>
+    <text x="153.7" y="183.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[NEW HEAD]</text>
+    <path d="M 220.7,197.9 L 220.7,227.9" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <rect x="110.7" y="232.9" width="220.0" height="55.0" fill="#ffec99" stroke="#e8590c" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="147.4" y="258.2" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">LSTM(128)</text>
+    <text x="147.4" y="275.1" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Partially reusable</text>
+    <path d="M 220.7,287.9 L 220.7,317.9" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <rect x="110.7" y="322.9" width="220.0" height="55.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="140.1" y="353.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Embedding (10K vocab)</text>
+    <text x="469.6" y="134.8" font-size="14" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">Task B (Summarization)</text>
+    <rect x="439.6" y="140.8" width="260.0" height="55.0" fill="#ffc9c9" stroke="#e03131" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="483.6" y="164.4" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Decoder LSTM + Dense</text>
+    <text x="483.6" y="181.3" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[NEW HEAD + DECODER]</text>
+    <path d="M 569.6,195.8 L 569.6,225.8" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <rect x="439.6" y="230.8" width="260.0" height="55.0" fill="#ffec99" stroke="#e8590c" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="495.4" y="256.9" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Encoder LSTM</text>
+    <text x="495.4" y="273.8" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(return_state=True)</text>
+    <path d="M 569.6,285.8 L 569.6,315.8" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <rect x="439.6" y="320.8" width="260.0" height="55.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="508.8" y="345.2" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">NEW Embedding</text>
+    <text x="508.8" y="362.1" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(different vocab)</text>
+    <path d="M 331.7,171.1 L 438.1,171.4" stroke="#e03131" stroke-width="2" fill="none" marker-end="url(#arrow-e03131)" opacity="1.0"/>
+    <text x="344.0" y="198.0" font-size="11" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">must replace</text>
+    <text x="336.7" y="374.8" font-size="11" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">vocab mismatch</text>
+    <text x="242.0" y="412.7" font-size="14" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">Result: ~0.01% accuracy on new task</text>
+    <rect x="148.2" y="527.2" width="220.0" height="55.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="186.0" y="550.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">&quot;Is this positive</text>
+    <text x="186.0" y="567.6" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0"> or negative: ...&quot;</text>
+    <rect x="418.2" y="527.2" width="220.0" height="55.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="469.0" y="550.8" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">&quot;Summarize this</text>
+    <text x="469.0" y="567.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0"> article: ...&quot;</text>
+    <path d="M 258.2,582.2 L 358.2,637.2" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <path d="M 528.2,582.2 L 428.2,637.2" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <rect x="168.2" y="647.2" width="450.0" height="80.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="243.8" y="675.2" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Same Transformer Model</text>
+    <text x="243.8" y="693.4" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(shared weights, shared tokenizer,</text>
+    <text x="243.8" y="711.6" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0"> LoRA-adaptable at any layer)</text>
+    <path d="M 298.2,727.2 L 248.2,767.2" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <path d="M 488.2,727.2 L 538.2,767.2" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <text x="188.2" y="793.2" font-size="16" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">&quot;POSITIVE&quot;</text>
+    <text x="458.2" y="793.2" font-size="16" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">&quot;The article discusses...&quot;</text>
+    <path d="M 331.7,349.6 L 438.0,349.9" stroke="#e03131" stroke-width="2" fill="none" marker-end="url(#arrow-e03131)" opacity="1.0"/>
+</svg>

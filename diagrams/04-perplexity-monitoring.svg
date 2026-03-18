@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="852" height="562" viewBox="0 0 852 562">
+  <title>Perplexity Monitoring During Fine-Tuning</title>
+  <defs>
+
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <path d="M 75.9,49.6 L 75.9,447.6" stroke="#495057" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 75.9,447.6 L 625.9,447.6" stroke="#495057" stroke-width="2" fill="none" opacity="1.0"/>
+    <text x="30.0" y="45.0" font-size="15" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">Perplexity</text>
+    <path d="M 67.9,407.8 L 75.9,407.8" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="37.9" y="412.8" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">5</text>
+    <path d="M 67.9,368.0 L 75.9,368.0" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="373.0" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">10</text>
+    <path d="M 67.9,328.2 L 75.9,328.2" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="333.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">15</text>
+    <path d="M 67.9,288.4 L 75.9,288.4" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="293.4" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">20</text>
+    <path d="M 67.9,248.6 L 75.9,248.6" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="253.6" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">25</text>
+    <path d="M 67.9,208.8 L 75.9,208.8" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="213.8" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">30</text>
+    <path d="M 67.9,169.0 L 75.9,169.0" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="174.0" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">35</text>
+    <path d="M 67.9,129.2 L 75.9,129.2" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="134.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">40</text>
+    <path d="M 67.9,89.4 L 75.9,89.4" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="34.9" y="94.4" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">45</text>
+    <path d="M 75.9,447.6 L 75.9,455.6" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="71.9" y="471.6" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0</text>
+    <path d="M 185.9,447.6 L 185.9,455.6" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="182.7" y="472.5" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">1</text>
+    <path d="M 295.9,447.6 L 295.9,455.6" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="291.9" y="471.6" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">2</text>
+    <path d="M 405.9,447.6 L 405.9,455.6" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="401.9" y="471.6" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">3</text>
+    <path d="M 515.9,447.6 L 515.9,455.6" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="511.9" y="471.6" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">4</text>
+    <path d="M 625.9,447.6 L 625.9,455.6" stroke="#495057" stroke-width="1" fill="none" opacity="1.0"/>
+    <text x="621.9" y="471.6" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">5</text>
+    <text x="260.3" y="497.3" font-size="14" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">Training Progress (Epoch)</text>
+    <path d="M 75.9,208.8 L 625.9,208.8" stroke="#1971c2" stroke-width="2" fill="none" opacity="1.0" stroke-dasharray="8 6"/>
+    <path d="M 75.9,208.8 L 108.9,204.8 L 141.9,200.8 L 185.9,192.8 L 240.9,180.9 L 295.9,165.0 L 350.9,145.1 L 405.9,125.2 L 460.9,105.3 L 515.9,85.4" stroke="#e03131" stroke-width="2" fill="none" opacity="1.0" stroke-dasharray="8 6"/>
+    <path d="M 75.9,208.8 L 97.9,232.6 L 119.9,256.5 L 141.9,280.4 L 163.9,304.3 L 185.9,324.2 L 218.9,344.1 L 251.9,356.0 L 295.9,364.0 L 350.9,368.0 L 405.9,368.0 L 460.9,368.0 L 515.9,368.0 L 570.9,368.0 L 625.9,368.0" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0" stroke-dasharray="8 6"/>
+    <text x="110.0" y="227.7" font-size="13" fill="#495057" font-family="'Courier New',monospace" opacity="1.0">General (baseline)</text>
+    <text x="635.9" y="209.8" font-size="13" fill="#1971c2" font-family="'Courier New',monospace" opacity="1.0">← General (healthy):</text>
+    <text x="650.9" y="229.7" font-size="13" fill="#1971c2" font-family="'Courier New',monospace" opacity="1.0">stays flat</text>
+    <text x="475.9" y="94.4" font-size="13" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">General (forgetting!)</text>
+    <rect x="312.9" y="142.1" width="120.0" height="22.0" fill="#ffc9c9" stroke="#e03131" stroke-width="1" rx="0" opacity="1.0"/>
+    <text x="317.9" y="159.1" font-size="14" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">⚠ STOP HERE</text>
+    <text x="307.9" y="181.1" font-size="11" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">(&gt;15% above baseline)</text>
+    <text x="152.9" y="309.3" font-size="13" fill="#1098ad" font-family="'Courier New',monospace" opacity="1.0">Domain perplexity</text>
+    <text x="163.9" y="324.2" font-size="12" fill="#1098ad" font-family="'Courier New',monospace" opacity="1.0">(should decrease)</text>
+    <text x="635.9" y="377.0" font-size="13" fill="#1098ad" font-family="'Courier New',monospace" opacity="1.0">← plateaus</text>
+</svg>

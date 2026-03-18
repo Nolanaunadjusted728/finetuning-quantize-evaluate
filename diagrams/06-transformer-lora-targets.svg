@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="745" height="810" viewBox="0 0 745 810">
+  <title>Transformer Block — LoRA Target Modules</title>
+  <defs>
+      <marker id="arrow-1098ad" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1098ad"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="30.0" y="58.0" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Transformer Block — LoRA Target Modules</text>
+    <text x="320.3" y="88.9" font-size="16" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">Input</text>
+    <rect x="101.0" y="129.9" width="500.0" height="250.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="201.0" y="150.9" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Multi-Head Self-Attention</text>
+    <rect x="141.0" y="164.9" width="120.0" height="45.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="161.0" y="186.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">q_proj</text>
+    <text x="161.0" y="202.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(query)</text>
+    <rect x="291.0" y="164.9" width="120.0" height="45.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="316.0" y="186.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">k_proj</text>
+    <text x="316.0" y="202.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(key)</text>
+    <rect x="441.0" y="164.9" width="120.0" height="45.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="461.0" y="186.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">v_proj</text>
+    <text x="461.0" y="202.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(value)</text>
+    <text x="353.7" y="262.6" font-size="13" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">— Attention —</text>
+    <rect x="281.0" y="269.9" width="120.0" height="50.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="315.8" y="291.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">o_proj</text>
+    <text x="315.8" y="307.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(output)</text>
+    <rect x="101.0" y="384.9" width="500.0" height="220.0" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="211.0" y="405.9" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Feed-Forward Network (FFN)</text>
+    <rect x="171.0" y="424.9" width="120.0" height="40.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="191.0" y="446.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">gate_proj</text>
+    <rect x="411.0" y="424.9" width="120.0" height="40.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="436.0" y="446.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">up_proj</text>
+    <text x="298.1" y="480.9" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">— multiply —</text>
+    <rect x="271.0" y="524.9" width="140.0" height="40.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="298.0" y="546.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">down_proj</text>
+    <text x="316.0" y="650.9" font-size="16" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">Output</text>
+    <rect x="101.0" y="664.9" width="530.0" height="85.0" fill="#fff3bf" stroke="#e8590c" stroke-width="1" rx="0" opacity="1.0"/>
+    <text x="116.0" y="681.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">LoRA Coverage:</text>
+    <text x="116.0" y="697.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">  Attention only (q,v):        ~0.3% params  ← last resort</text>
+    <text x="116.0" y="713.1" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">  All attention (q,k,v,o):     ~0.6% params  ← standard</text>
+    <text x="116.0" y="728.7" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">  All linear (+ gate,up,down): ~1-2% params  ← recommended</text>
+    <path d="M 341.0,99.9 L 341.0,119.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 341.0,119.9 L 341.0,129.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 201.0,209.9 L 201.0,214.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 201.0,214.9 L 201.6,241.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 351.0,209.9 L 351.0,214.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 351.0,214.9 L 350.7,238.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 501.0,209.9 L 501.0,214.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 501.0,214.9 L 501.4,238.6" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 341.0,246.9 L 341.0,259.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 341.0,259.9 L 341.0,269.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 340.9,321.8 L 341.0,379.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 231.0,464.9 L 231.0,469.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 231.0,469.9 L 231.0,479.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 471.0,464.9 L 471.0,469.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 471.0,469.9 L 471.0,479.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 341.0,492.6 L 341.0,514.9" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 341.0,514.9 L 341.0,524.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 340.8,570.1 L 341.0,634.9" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 230.1,488.7 L 468.8,489.6" stroke="#1e1e1e" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 202.4,242.8 L 503.0,242.2" stroke="#1e1e1e" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 341.0,380.0 L 341.0,395.0" stroke="#1098ad" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 341.0,373.0 L 341.0,385.0" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+    <path d="M 341.0,657.0 L 341.0,669.0" stroke="#1098ad" stroke-width="2" fill="none" marker-end="url(#arrow-1098ad)" opacity="1.0"/>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="982" height="512" viewBox="0 0 982 512">
+  <title>BERT Extractive Question Answering</title>
+  <defs>
+      <marker id="arrow-7048e8" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7048e8"/></marker>
+      <marker id="arrow-e8590c" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8590c"/></marker>
+      <marker id="arrow-1971c2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1971c2"/></marker>
+      <marker id="arrow-1e1e1e" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e"/></marker>
+      <marker id="arrow-2f9e44" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2f9e44"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="172.4" y="58.0" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">BERT Extractive Question Answering</text>
+    <text x="72.4" y="91.2" font-size="16" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">Input Tokens:</text>
+    <rect x="72.4" y="100.2" width="80.0" height="40.0" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="87.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[CLS]</text>
+    <rect x="162.4" y="100.2" width="80.0" height="40.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="179.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">What</text>
+    <rect x="252.4" y="100.2" width="60.0" height="40.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="269.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">is</text>
+    <rect x="322.4" y="100.2" width="80.0" height="40.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="337.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">LoRA?</text>
+    <rect x="412.4" y="100.2" width="80.0" height="40.0" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="427.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[SEP]</text>
+    <rect x="502.4" y="100.2" width="100.0" height="40.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="512.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">LoRA is a</text>
+    <rect x="612.4" y="100.2" width="120.0" height="40.0" fill="#ffec99" stroke="#e8590c" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="622.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">parameter-</text>
+    <rect x="742.4" y="100.2" width="90.0" height="40.0" fill="#ffec99" stroke="#e8590c" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="757.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">method</text>
+    <rect x="842.4" y="100.2" width="80.0" height="40.0" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="857.4" y="122.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[SEP]</text>
+    <rect x="65.9" y="179.2" width="850.0" height="60.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="322.4" y="216.2" font-size="18" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">BERT Transformer (12 layers)</text>
+    <rect x="547.2" y="407.4" width="360.0" height="45.0" fill="#ffec99" stroke="#e8590c" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="569.3" y="435.5" font-size="15" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Answer: &quot;parameter-efficient method&quot;</text>
+    <path d="M 112.4,145.2 L 112.4,166.2" stroke="#1971c2" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 112.4,166.2 L 112.4,178.2" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#arrow-1971c2)" opacity="1.0"/>
+    <path d="M 202.4,145.2 L 202.4,166.2" stroke="#7048e8" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 202.4,166.2 L 202.4,178.2" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#arrow-7048e8)" opacity="1.0"/>
+    <path d="M 282.4,145.2 L 282.4,166.2" stroke="#7048e8" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 282.4,166.2 L 282.4,178.2" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#arrow-7048e8)" opacity="1.0"/>
+    <path d="M 362.4,145.2 L 362.4,166.2" stroke="#7048e8" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 362.4,166.2 L 362.4,178.2" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#arrow-7048e8)" opacity="1.0"/>
+    <path d="M 452.4,145.2 L 452.4,166.2" stroke="#1971c2" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 452.4,166.2 L 452.4,178.2" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#arrow-1971c2)" opacity="1.0"/>
+    <path d="M 552.4,145.2 L 552.4,166.2" stroke="#2f9e44" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 552.4,166.2 L 552.4,178.2" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <path d="M 672.4,145.2 L 672.4,166.2" stroke="#e8590c" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 672.4,166.2 L 672.4,178.2" stroke="#e8590c" stroke-width="2" fill="none" marker-end="url(#arrow-e8590c)" opacity="1.0"/>
+    <path d="M 787.4,145.2 L 787.4,166.2" stroke="#e8590c" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 787.4,166.2 L 787.4,178.2" stroke="#e8590c" stroke-width="2" fill="none" marker-end="url(#arrow-e8590c)" opacity="1.0"/>
+    <path d="M 882.4,145.2 L 882.4,166.2" stroke="#1971c2" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 882.4,166.2 L 882.4,178.2" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#arrow-1971c2)" opacity="1.0"/>
+    <path d="M 112.4,245.2 L 112.4,274.2" stroke="#1971c2" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 112.4,274.2 L 112.4,286.2" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#arrow-1971c2)" opacity="1.0"/>
+    <path d="M 202.4,245.2 L 202.4,274.2" stroke="#7048e8" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 202.4,274.2 L 202.4,286.2" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#arrow-7048e8)" opacity="1.0"/>
+    <path d="M 282.4,245.2 L 282.4,274.2" stroke="#7048e8" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 282.4,274.2 L 282.4,286.2" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#arrow-7048e8)" opacity="1.0"/>
+    <path d="M 362.4,245.2 L 362.4,274.2" stroke="#7048e8" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 362.4,274.2 L 362.4,286.2" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#arrow-7048e8)" opacity="1.0"/>
+    <path d="M 452.4,245.2 L 452.4,274.2" stroke="#1971c2" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 452.4,274.2 L 452.4,286.2" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#arrow-1971c2)" opacity="1.0"/>
+    <path d="M 552.4,245.2 L 552.4,274.2" stroke="#2f9e44" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 552.4,274.2 L 552.4,286.2" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <path d="M 672.4,245.2 L 672.4,274.2" stroke="#e8590c" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 672.4,274.2 L 672.4,286.2" stroke="#e8590c" stroke-width="2" fill="none" marker-end="url(#arrow-e8590c)" opacity="1.0"/>
+    <path d="M 787.4,245.2 L 787.4,274.2" stroke="#e8590c" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 787.4,274.2 L 787.4,286.2" stroke="#e8590c" stroke-width="2" fill="none" marker-end="url(#arrow-e8590c)" opacity="1.0"/>
+    <path d="M 882.4,245.2 L 882.4,274.2" stroke="#1971c2" stroke-width="2" fill="none" opacity="1.0"/>
+    <path d="M 882.4,274.2 L 882.4,286.2" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#arrow-1971c2)" opacity="1.0"/>
+    <text x="30.0" y="300.4" font-size="13" fill="#e8590c" font-family="'Courier New',monospace" opacity="1.0">Start: [</text>
+    <text x="30.0" y="321.0" font-size="13" fill="#1971c2" font-family="'Courier New',monospace" opacity="1.0">  End: [</text>
+    <text x="98.4" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="98.4" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="188.4" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="188.4" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="268.4" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="268.4" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="348.4" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="348.4" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.01,</text>
+    <text x="438.4" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.00,</text>
+    <text x="438.4" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.00,</text>
+    <text x="538.4" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.05,</text>
+    <text x="538.4" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.02,</text>
+    <text x="654.9" y="302.2" font-size="14" fill="#e8590c" font-family="'Courier New',monospace" opacity="1.0">▶0.90,</text>
+    <text x="654.9" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.05,</text>
+    <text x="773.4" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.02,</text>
+    <text x="773.4" y="322.2" font-size="14" fill="#1971c2" font-family="'Courier New',monospace" opacity="1.0">▶0.91,</text>
+    <text x="864.9" y="300.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.00]</text>
+    <text x="864.9" y="320.2" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">0.00]</text>
+    <path d="M 552.3,339.7 L 552.3,327.7" stroke="#e8590c" stroke-width="2" fill="none" marker-end="url(#arrow-e8590c)" opacity="1.0"/>
+    <text x="524.3" y="357.4" font-size="13" fill="#e8590c" font-family="'Courier New',monospace" opacity="1.0">start_idx</text>
+    <path d="M 881.7,339.7 L 881.7,327.7" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#arrow-1971c2)" opacity="1.0"/>
+    <text x="859.7" y="356.7" font-size="13" fill="#1971c2" font-family="'Courier New',monospace" opacity="1.0">end_idx</text>
+    <path d="M 721.9,377.3 L 721.9,397.3" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <path d="M 551.1,375.9 L 896.7,375.6" stroke="#1e1e1e" stroke-width="1" fill="none" opacity="1.0"/>
+</svg>

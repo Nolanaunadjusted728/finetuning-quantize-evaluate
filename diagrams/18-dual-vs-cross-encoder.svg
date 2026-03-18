@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="470" viewBox="0 0 680 470">
+  <title>18-dual-vs-cross-encoder</title>
+  <defs>
+      <marker id="arrow-4a9eed" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4a9eed"/></marker>
+      <marker id="arrow-1e1e1e" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e"/></marker>
+      <marker id="arrow-8b5cf6" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8b5cf6"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="110.0" y="54.0" font-size="24" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Dual Encoder vs Cross Encoder</text>
+    <rect x="30.0" y="70.0" width="280.0" height="340.0" fill="#dbe4ff" stroke="none" rx="0" opacity="1.0"/>
+    <text x="70.0" y="96.0" font-size="16" fill="#1e40af" font-family="'Courier New',monospace" opacity="1.0">Dual Encoder (Retrieval)</text>
+    <rect x="50.0" y="115.0" width="100.0" height="35.0" fill="#a5d8ff" stroke="#4a9eed" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="75.0" y="137.0" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Query</text>
+    <rect x="190.0" y="115.0" width="100.0" height="35.0" fill="#a5d8ff" stroke="#4a9eed" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="205.0" y="137.0" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Document</text>
+    <path d="M 100.0,150.0 L 100.0,175.0" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <path d="M 240.0,150.0 L 240.0,175.0" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <rect x="50.0" y="180.0" width="100.0" height="35.0" fill="#b2f2bb" stroke="#22c55e" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="65.0" y="202.0" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[Encoder]</text>
+    <rect x="190.0" y="180.0" width="100.0" height="35.0" fill="#b2f2bb" stroke="#22c55e" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="205.0" y="202.0" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[Encoder]</text>
+    <text x="85.0" y="243.0" font-size="13" fill="#555555" font-family="'Courier New',monospace" opacity="1.0">q_emb</text>
+    <text x="220.0" y="243.0" font-size="13" fill="#555555" font-family="'Courier New',monospace" opacity="1.0">d_emb</text>
+    <rect x="102.7" y="271.9" width="140.0" height="30.0" fill="#fff3bf" stroke="#f59e0b" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="115.1" y="291.5" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">cosine_sim(q,d)</text>
+    <text x="110.4" y="335.9" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Similarity Score</text>
+    <rect x="340.0" y="70.0" width="280.0" height="340.0" fill="#e5dbff" stroke="none" rx="0" opacity="1.0"/>
+    <text x="370.0" y="96.0" font-size="16" fill="#5b21b6" font-family="'Courier New',monospace" opacity="1.0">Cross Encoder (Re-ranking)</text>
+    <rect x="380.0" y="115.0" width="200.0" height="35.0" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="390.0" y="136.9" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Query + [SEP] + Document</text>
+    <path d="M 480.0,150.0 L 480.0,175.0" stroke="#8b5cf6" stroke-width="2" fill="none" marker-end="url(#arrow-8b5cf6)" opacity="1.0"/>
+    <rect x="420.0" y="180.0" width="120.0" height="35.0" fill="#b2f2bb" stroke="#22c55e" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="440.0" y="202.0" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">[Encoder]</text>
+    <text x="419.8" y="248.2" font-size="13" fill="#555555" font-family="'Courier New',monospace" opacity="1.0">[CLS] hidden state</text>
+    <rect x="420.0" y="268.7" width="130.0" height="30.0" fill="#fff3bf" stroke="#f59e0b" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="428.5" y="287.9" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Linear + Sigmoid</text>
+    <text x="424.5" y="333.8" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Relevance Score</text>
+    <path d="M 100.0,215.0 L 100.0,235.0" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <path d="M 240.0,215.0 L 240.0,235.0" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <path d="M 105.0,248.0 L 140.5,271.3" stroke="#888888" stroke-width="1.5" fill="none" opacity="1.0"/>
+    <path d="M 239.9,246.4 L 203.9,272.1" stroke="#888888" stroke-width="1.5" fill="none" opacity="1.0"/>
+    <path d="M 169.4,304.8 L 169.4,322.8" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <path d="M 480.0,215.0 L 480.0,235.0" stroke="#8b5cf6" stroke-width="2" fill="none" marker-end="url(#arrow-8b5cf6)" opacity="1.0"/>
+    <path d="M 480.0,252.3 L 480.0,267.3" stroke="#8b5cf6" stroke-width="2" fill="none" marker-end="url(#arrow-8b5cf6)" opacity="1.0"/>
+    <path d="M 480.4,302.6 L 480.4,320.6" stroke="#8b5cf6" stroke-width="2" fill="none" marker-end="url(#arrow-8b5cf6)" opacity="1.0"/>
+    <text x="135.7" y="353.1" font-size="12" fill="#555555" font-family="'Courier New',monospace" opacity="1.0">(0.0–1.0)</text>
+    <text x="450.0" y="351.7" font-size="12" fill="#555555" font-family="'Courier New',monospace" opacity="1.0">(0.0–1.0)</text>
+    <path d="M 239.8,244.6 L 204.4,270.9" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <path d="M 103.3,246.8 L 146.1,272.2" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+</svg>

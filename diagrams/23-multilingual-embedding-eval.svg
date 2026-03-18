@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3.953125 10995.51953125 832.8 489.97265625" width="832.8" height="489.97265625">
+<rect x="-3.953125" y="10995.51953125" width="832.8" height="489.97265625" fill="#ffffff" />
+<text x="26.046875" y="11053.51953125" font-size="28" font-family="monospace" fill="#1e1e1e">Multilingual Embedding Evaluation — t-SNE View</text>
+<rect x="63.08203125" y="11077.9921875" width="320" height="340" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="8" />
+<text x="79.55078125" y="11108.37890625" font-size="14" font-family="monospace" fill="#1971c2">Multilingual Model (Qwen3-Embedding)</text>
+<text x="109.48046875" y="11131.5703125" font-size="12" font-family="monospace" fill="#2f9e44">Clusters by TOPIC, not language</text>
+<ellipse cx="130.65625" cy="11188.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="150.65625" cy="11178.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="115.65625" cy="11203.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="155.65625" cy="11200.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="135.65625" cy="11168.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="120.65625" cy="11193.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="160.65625" cy="11183.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="140.65625" cy="11193.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="125.65625" cy="11176.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="145.65625" cy="11170.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="110.65625" cy="11196.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="138.65625" cy="11206.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<text x="115.65625" y="11229.55859375" font-size="11" font-family="monospace" fill="#495057">Topic A:</text>
+<text x="115.65625" y="11243.30859375" font-size="11" font-family="monospace" fill="#495057">Tokenization</text>
+<ellipse cx="250.65625" cy="11298.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="265.65625" cy="11290.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="238.65625" cy="11310.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="272.65625" cy="11308.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="242.65625" cy="11283.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="260.65625" cy="11318.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="255.65625" cy="11306.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="240.65625" cy="11293.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="268.65625" cy="11286.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="235.65625" cy="11316.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="258.65625" cy="11278.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<text x="240.65625" y="11339.55859375" font-size="11" font-family="monospace" fill="#495057">Topic B:</text>
+<text x="240.65625" y="11353.30859375" font-size="11" font-family="monospace" fill="#495057">Attention</text>
+<ellipse cx="140.65625" cy="11328.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="152.65625" cy="11322.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="132.65625" cy="11338.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="158.65625" cy="11336.55859375" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="146.65625" cy="11332.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="134.65625" cy="11320.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="154.65625" cy="11318.55859375" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<text x="130.65625" y="11359.55859375" font-size="11" font-family="monospace" fill="#495057">Topic C:</text>
+<text x="130.65625" y="11373.30859375" font-size="11" font-family="monospace" fill="#495057">Fine-tuning</text>
+<text x="118.921875" y="11398.65234375" font-size="13" font-family="monospace" fill="#2f9e44">✓ Cross-lingual alignment</text>
+<rect x="453.08203125" y="11077.9921875" width="320" height="340" fill="#fff5f5" stroke="#dee2e6" stroke-width="1" rx="8" />
+<text x="484.65234375" y="11110.1875" font-size="14" font-family="monospace" fill="#e03131">Monolingual Model (English-only)</text>
+<text x="501.80078125" y="11132.359375" font-size="12" font-family="monospace" fill="#e03131">Clusters by LANGUAGE, not topic</text>
+<ellipse cx="512.359375" cy="11243.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="527.359375" cy="11231.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="502.359375" cy="11261.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="534.359375" cy="11251.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="494.359375" cy="11235.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="520.359375" cy="11268.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="507.359375" cy="11221.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="537.359375" cy="11238.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="524.359375" cy="11258.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="497.359375" cy="11253.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="542.359375" cy="11255.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="504.359375" cy="11273.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="517.359375" cy="11213.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<ellipse cx="532.359375" cy="11265.25390625" rx="5.0" ry="5.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<text x="492.359375" y="11294.25390625" font-size="11" font-family="monospace" fill="#1971c2">All English</text>
+<text x="492.359375" y="11308.00390625" font-size="11" font-family="monospace" fill="#1971c2">(mixed topics)</text>
+<ellipse cx="680.12109375" cy="11241.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="692.12109375" cy="11231.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="672.12109375" cy="11256.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="698.12109375" cy="11246.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="665.12109375" cy="11236.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="685.12109375" cy="11261.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="670.12109375" cy="11223.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="700.12109375" cy="11233.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="688.12109375" cy="11253.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="668.12109375" cy="11249.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="702.12109375" cy="11256.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="675.12109375" cy="11266.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="695.12109375" cy="11221.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<ellipse cx="680.12109375" cy="11216.0703125" rx="5.0" ry="5.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<text x="663.12109375" y="11292.0703125" font-size="11" font-family="monospace" fill="#e03131">All Arabic</text>
+<text x="663.12109375" y="11305.8203125" font-size="11" font-family="monospace" fill="#e03131">(mixed topics)</text>
+<polyline points="605.12109375,11156.0703125 605.12109375,11356.0703125" fill="none" stroke="#e03131" stroke-width="1" stroke-dasharray="6 4" />
+<text x="502.6953125" y="11396.578125" font-size="13" font-family="monospace" fill="#e03131">✗ No cross-lingual alignment</text>
+<text x="203.08203125" y="11451.9921875" font-size="14" font-family="monospace" fill="#1e1e1e">Legend:</text>
+<ellipse cx="279.08203125" cy="11445.9921875" rx="6.0" ry="6.0" fill="#339af0" stroke="#1971c2" stroke-width="1" />
+<text x="291.08203125" y="11450.9921875" font-size="13" font-family="monospace" fill="#1971c2">English queries</text>
+<ellipse cx="439.08203125" cy="11445.9921875" rx="6.0" ry="6.0" fill="#ff6b6b" stroke="#e03131" stroke-width="1" />
+<text x="451.08203125" y="11450.9921875" font-size="13" font-family="monospace" fill="#e03131">Arabic queries</text>
+</svg>

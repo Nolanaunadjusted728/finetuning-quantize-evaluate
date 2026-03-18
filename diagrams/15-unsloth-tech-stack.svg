@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="484" height="590" viewBox="0 0 484 590">
+  <title>15-unsloth-tech-stack</title>
+  <defs>
+      <marker id="arrow-4a9eed" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4a9eed"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="33.7" y="54.0" font-size="24" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Unsloth Technology Stack</text>
+    <rect x="100.0" y="80.3" width="200.0" height="50.0" fill="#a5d8ff" stroke="#4a9eed" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="147.8" y="108.2" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">User Code</text>
+    <path d="M 200.0,130.3 L 200.0,160.3" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <rect x="65.0" y="160.3" width="270.0" height="50.0" fill="#fff3bf" stroke="#f59e0b" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="75.0" y="191.3" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Unsloth (Optimized Engine)</text>
+    <path d="M 200.0,210.3 L 200.0,240.3" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <rect x="30.0" y="240.6" width="390.6" height="49.7" fill="#b2f2bb" stroke="#22c55e" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="40.0" y="271.3" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Hugging Face (Transformers + PEFT + TRL)</text>
+    <path d="M 200.0,290.3 L 200.0,320.3" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <rect x="100.0" y="320.3" width="200.0" height="50.0" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="165.4" y="349.1" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">PyTorch</text>
+    <path d="M 200.0,370.3 L 200.0,400.3" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <rect x="75.0" y="400.3" width="250.0" height="50.0" fill="#ffc9c9" stroke="#ef4444" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="103.2" y="431.5" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">CUDA / Triton Kernels</text>
+    <path d="M 200.0,450.3 L 200.0,480.3" stroke="#4a9eed" stroke-width="2" fill="none" marker-end="url(#arrow-4a9eed)" opacity="1.0"/>
+    <rect x="130.0" y="480.3" width="140.0" height="50.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="183.8" y="510.4" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">GPU</text>
+</svg>

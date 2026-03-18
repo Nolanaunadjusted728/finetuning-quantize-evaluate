@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="812" height="665" viewBox="0 0 812 665">
+  <title>Knowledge Distillation — Training Data Flow</title>
+  <defs>
+      <marker id="arrow-495057" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#495057"/></marker>
+      <marker id="arrow-7048e8" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7048e8"/></marker>
+      <marker id="arrow-e8590c" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8590c"/></marker>
+      <marker id="arrow-1e1e1e" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e"/></marker>
+      <marker id="arrow-2f9e44" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2f9e44"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="30.0" y="58.0" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Knowledge Distillation — Training Data Flow</text>
+    <rect x="302.2" y="85.7" width="120.0" height="40.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="332.2" y="109.7" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Input x</text>
+    <path d="M 322.2,125.7 L 242.2,165.7" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <path d="M 402.2,125.7 L 482.2,165.7" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <rect x="152.2" y="175.7" width="150.0" height="55.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="193.0" y="199.4" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Teacher</text>
+    <text x="193.0" y="217.6" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(frozen)</text>
+    <rect x="412.2" y="175.7" width="150.0" height="55.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="446.0" y="199.1" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Student</text>
+    <text x="446.0" y="217.3" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(trainable)</text>
+    <path d="M 227.2,230.7 L 227.2,260.7" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <path d="M 457.2,230.7 L 457.2,260.7" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <path d="M 534.8,232.0 L 534.8,262.0" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <text x="192.2" y="277.7" font-size="12" fill="#495057" font-family="'Courier New',monospace" opacity="1.0">z_t (logits)</text>
+    <text x="192.2" y="293.3" font-size="12" fill="#495057" font-family="'Courier New',monospace" opacity="1.0">   ÷ T</text>
+    <text x="192.2" y="308.9" font-size="12" fill="#495057" font-family="'Courier New',monospace" opacity="1.0">softmax</text>
+    <text x="417.6" y="276.2" font-size="12" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">z_s (logits)</text>
+    <text x="417.6" y="291.8" font-size="12" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">     ÷ T</text>
+    <text x="417.6" y="307.4" font-size="12" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">log_softmax</text>
+    <text x="522.2" y="277.7" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">z_s</text>
+    <text x="522.2" y="293.3" font-size="12" fill="#868e96" font-family="'Courier New',monospace" opacity="1.0">(T=1)</text>
+    <path d="M 227.2,315.7 L 327.2,355.7" stroke="#495057" stroke-width="2" fill="none" marker-end="url(#arrow-495057)" opacity="1.0"/>
+    <path d="M 457.2,315.7 L 357.2,355.7" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <rect x="172.2" y="360.7" width="180.0" height="50.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="204.2" y="382.4" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">KL Divergence</text>
+    <text x="204.2" y="398.0" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(soft targets)</text>
+    <rect x="412.2" y="360.7" width="180.0" height="50.0" fill="#ffec99" stroke="#e8590c" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="456.5" y="381.6" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Cross-Entropy</text>
+    <text x="456.5" y="397.2" font-size="12" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">(hard labels)</text>
+    <text x="232.2" y="428.7" font-size="13" fill="#7048e8" font-family="'Courier New',monospace" opacity="1.0">x α·T²</text>
+    <text x="462.2" y="428.7" font-size="13" fill="#e8590c" font-family="'Courier New',monospace" opacity="1.0">x (1 - α)</text>
+    <path d="M 262.2,435.7 L 342.2,475.7" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#arrow-7048e8)" opacity="1.0"/>
+    <path d="M 502.2,435.7 L 422.2,475.7" stroke="#e8590c" stroke-width="2" fill="none" marker-end="url(#arrow-e8590c)" opacity="1.0"/>
+    <rect x="282.2" y="485.7" width="180.0" height="55.0" fill="#ffc9c9" stroke="#e03131" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="330.3" y="509.2" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Total Loss</text>
+    <text x="330.3" y="527.4" font-size="14" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">L_distill</text>
+    <path d="M 372.2,540.7 L 372.2,565.7" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+    <text x="322.2" y="583.7" font-size="13" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">backprop to</text>
+    <text x="322.2" y="600.6" font-size="13" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">student only</text>
+    <path d="M 536.3,300.5 L 537.0,354.3" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrow-1e1e1e)" opacity="1.0"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="509" viewBox="0 0 780 509">
+  <title>LoRA Low-Rank Decomposition</title>
+  <defs>
+
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="115.6" y="58.0" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">LoRA Low-Rank Decomposition</text>
+    <text x="180.0" y="94.5" font-size="18" fill="#7048e8" font-family="'Courier New',monospace" opacity="1.0">Forward pass:  h = W₀x + BAx</text>
+    <rect x="30.0" y="121.5" width="250.0" height="180.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="75.0" y="182.5" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">W₀ (frozen)</text>
+    <text x="75.0" y="203.3" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">d x d</text>
+    <text x="75.0" y="224.1" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">16.7M params</text>
+    <text x="300.0" y="224.5" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">+</text>
+    <rect x="350.0" y="131.5" width="70.0" height="160.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="368.7" y="183.2" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">B</text>
+    <text x="368.7" y="204.0" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">d×r</text>
+    <text x="435.0" y="224.5" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">x</text>
+    <rect x="470.0" y="121.5" width="250.0" height="180.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="533.5" y="178.9" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">A (trainable)</text>
+    <text x="533.5" y="199.7" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">r x d</text>
+    <text x="533.5" y="220.5" font-size="16" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">65K params</text>
+    <text x="60.0" y="329.5" font-size="13" fill="#495057" font-family="'Courier New',monospace" opacity="1.0">Original weights</text>
+    <text x="60.0" y="346.4" font-size="13" fill="#495057" font-family="'Courier New',monospace" opacity="1.0">(NOT updated)</text>
+    <text x="410.0" y="325.5" font-size="14" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">ΔW = B · A</text>
+    <text x="410.0" y="343.7" font-size="14" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">131K params total</text>
+    <text x="410.0" y="361.9" font-size="14" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">= 0.78% of full W₀</text>
+    <rect x="80.0" y="371.5" width="600.0" height="64.3" fill="#fff3bf" stroke="#e8590c" stroke-width="1" rx="0" opacity="1.0"/>
+    <text x="100.0" y="394.5" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Example: d=4096, r=16</text>
+    <text x="100.0" y="411.4" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">  Full Update: 4096² = 16,777,216 params    </text>
+    <text x="100.0" y="428.3" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">  LoRA Update: 2 × 4096 × 16 = 131,072 params</text>
+    <text x="100.0" y="445.2" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0"></text>
+</svg>

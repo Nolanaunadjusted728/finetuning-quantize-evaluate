@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="777" height="433" viewBox="0 0 777 433">
+  <title>LoRA Adapter Stacking: Wrong vs Right</title>
+  <defs>
+      <marker id="arrow-e03131" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e03131"/></marker>
+      <marker id="arrow-2f9e44" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2f9e44"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+    <text x="45.9" y="58.0" font-size="28" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">LoRA Adapter Stacking: Wrong vs Right</text>
+    <text x="30.0" y="98.7" font-size="16" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">WRONG (unstable training loss):</text>
+    <rect x="30.0" y="112.7" width="140.0" height="50.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="50.0" y="140.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Base Model</text>
+    <path d="M 170.0,137.7 L 250.0,137.7" stroke="#e03131" stroke-width="2" fill="none" marker-end="url(#arrow-e03131)" opacity="1.0"/>
+    <text x="185.0" y="128.7" font-size="11" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">LoRA₁</text>
+    <rect x="260.0" y="112.7" width="140.0" height="50.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="280.0" y="140.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">SFT Model</text>
+    <path d="M 400.0,137.7 L 480.0,137.7" stroke="#e03131" stroke-width="2" fill="none" marker-end="url(#arrow-e03131)" opacity="1.0"/>
+    <text x="410.0" y="128.7" font-size="11" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">LoRA₂</text>
+    <rect x="490.0" y="112.7" width="140.0" height="50.0" fill="#ffc9c9" stroke="#e03131" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="505.0" y="140.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">DPO Model</text>
+    <text x="640.0" y="143.7" font-size="16" fill="#e03131" font-family="'Courier New',monospace" opacity="1.0">BROKEN</text>
+    <text x="30.0" y="208.7" font-size="16" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">RIGHT (merge before re-adapting):</text>
+    <rect x="30.0" y="222.7" width="140.0" height="50.0" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="50.0" y="250.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Base Model</text>
+    <path d="M 170.0,247.7 L 250.0,247.7" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <text x="185.0" y="238.7" font-size="11" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">LoRA₁</text>
+    <rect x="260.0" y="222.7" width="140.0" height="50.0" fill="#d0bfff" stroke="#7048e8" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="280.0" y="250.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">SFT Model</text>
+    <path d="M 400.0,247.7 L 480.0,247.7" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <text x="389.3" y="289.9" font-size="10" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">merge_and_unload()</text>
+    <rect x="490.0" y="222.7" width="160.0" height="50.0" fill="#a5d8ff" stroke="#1971c2" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="505.0" y="250.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">Merged Model</text>
+    <path d="M 570.0,272.7 L 570.0,312.7" stroke="#2f9e44" stroke-width="2" fill="none" marker-end="url(#arrow-2f9e44)" opacity="1.0"/>
+    <text x="580.0" y="293.7" font-size="11" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">LoRA₂</text>
+    <rect x="500.0" y="322.7" width="140.0" height="50.0" fill="#b2f2bb" stroke="#2f9e44" stroke-width="2" rx="0" opacity="1.0"/>
+    <text x="520.0" y="350.7" font-size="13" fill="#1e1e1e" font-family="'Courier New',monospace" opacity="1.0">DPO Model</text>
+    <text x="650.0" y="353.7" font-size="16" fill="#2f9e44" font-family="'Courier New',monospace" opacity="1.0">CORRECT</text>
+</svg>
